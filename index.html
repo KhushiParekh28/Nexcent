@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Logo and Hamburger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white p-4 ">
+        <div class="flex justify-between items-center mb-2">
+            <!-- Logo Section -->
+            <div class="flex items-center justify-start md:ml-14 ">
+                <img src="nexcent-logo.png" alt="Logo" class=" w-32  mr-2">
+               
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <div class="w-6 h-0.5 bg-green-800 mb-1"></div>
+                    <div class="w-6 h-0.5 bg-green-800 mb-1"></div>
+                    <div class="w-6 h-0.5 bg-green-800"></div>
+                </button>
+            </div>
+
+            
+            <div id="menu" class="hidden md:flex space-x-4 ">
+                <a href="#" class="text-gray-700 hover:text-green-500">Home</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Features</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Community</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Blog</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Pricing</a>
+            </div>
+        <div class="hidden md:flex space-x-4"> 
+            <button class="bg-[#4CAF4F] text-white w-40 h-12 mr-20" fdprocessedid="ncrnvx">Register Now </button>
+    </div>
+        </div>
+    
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-md">
+        <a href="#" class="block text-gray-700 hover:text-green-500 mb-2">Home</a>
+        <a href="#" class="block text-gray-700 hover:text-green-500 mb-2">About</a>
+        <a href="#" class="block text-gray-700 hover:text-green-500 mb-2">Services</a>
+        <a href="#" class="block text-gray-700 hover:text-green-500">Contact</a>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    </nav>
+  <div class="container flex flex-col justify-center items-center my-12 md:px-10  lg:flex-row">
+    <div class="flex flex-col items-start justify-start lg:items-start ">
+        <h2 class=" my-2  font-bold text-black text-4xl">Lessons and insights</h2>
+        <h2 class="my-4 text-left text-[#4CAF4F] font-bold text-4xl">from 8 years</h2>
+        <p class="my-4 text-center lg:text-left">
+            Where to grow your business as a photographer: site or social media?
+        </p>
+        <button class="mt-4 bg-[#4CAF4F] text-white p-3 rounded-md ">Register</button>
+    </div>
+    <div>
+    <img src="DJCSI Technical Tasks Illustration.png" class="container my-20 mx-20">
+</div>
+  </div>
+   
+    <div class="flex flex-col justify-center items-center mx-10">
+    <span class=" block text-4xl mb-4 md:mb-0 md:mr-4 my-2  font-bold">
+        Manage your entire community
+    </span>
+    <span class=" block text-4xl my-2 font-bold ">
+        in a single system
+    </span>
+    <p class="block my-2">Who is Nextcent suitable for?</p>
+</div>
+<div class="flex flex-col md:flex-row p-5 ml-7 mr-7 space-x-3 justify-center items-center ">
+    <div class="flex flex-col items-center text-center shadow-sm md:w-1/4 ">
+    <img class="mb-4"src="DJCSI Technical Tasks Icon.png" alt="">
+    <h4 class="font-bold mb-2">
+        <span class="block">Membership</span>
+        <span class="block">Organisations</span>
+    </h4>
+      <p class="text-balance "> Our membership management software provides full automation of membership renewals and payments</p>
+        </div>
+        
+        <div class="flex flex-col items-center text-center shadow-sm  md:w-1/4">
+            <img class="mb-4" src="DJCSI Technical Tasks Icon (1) (3).png" alt="">
+            <h4 class="font-bold mb-2">
+                <span class="block">National</span>
+                <span class="block">Associations</span>
+            </h4>
+              <p class="text-balance "> Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                <div class="flex flex-col items-center text-center shadow-sm md:w-1/4 ">
+                    <img class="mb-4" src="DJCSI Technical Tasks Icon (2) (5).png" alt="">
+                    <h4 class="font-bold mb-2">
+                        <span class="block">Clubs And</span>
+                        <span class="block">Groups</span>
+                    </h4>
+                      <p class="text-balance "> Our membership management software provides full automation of membership renewals and payments</p>
+                        </div>
+</div>
+<div class="flex flex-col md:flex-row p-10 justify-center items-center">
+    <img src="rafiki (1).png" class="">
+    <div class="flex container flex-col my-3 w-1/2">
+    <h3 class=" container text-4xl font-bold my-3  ">The unseen of spending three years at Pixelgrade</h3>
+    <p class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, iste est! Est illo unde quas qui non amet? Eos a ex nemo perferendis sequi error corporis iure explicabo perspiciatis laboriosam?</p>
+    <button class="bg-[#4CAF4F] w-40 my-5 p-2 text-white">Learn More</button>
+    </div>
+</div>
+    <div class="flex flex-col justify-center items-center mx-10  ">
+      <h4 class="text-4xl font-bold">Caring is the new marketing</h4>
+      <p class=" container text-center my-4 w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet odit fuga, exercitationem eligendi, impedit enim fugit veniam sapiente, deserunt expedita incidunt voluptate autem qui dolorem atque! Facilis, ducimus molestiae!</p>
+    </div>
+    <div class="flex flex-col  mx-6  relative md:flex-row">
+        <div class="md:ml-32 my-4 md:w-1/3">
+        <img src="DJCSI Technical Tasks Image 18.png" alt="" class="container">
+        <div>
+            <h6 class="text-xl font-semibold">Creating Streamlined Safeguarding Processes with OneRen</h6>
+            <span  class="text-[#3d8c40] font-bold mr-2">Readmore -></span>
+        </div>
+    </div>
+    <div class="m-4 md:mx-10 md:w-1/3">
+        <img src="DJCSI Technical Tasks Image 19.png" alt="" class="container">
+        <div>
+            
+            <h6 class="text-xl font-semibold">What are you safeguarding responsiblities and how can you manage them?</h6>
+            <span class="text-[#3d8c40] font-bold mr-2">Read more</span>
+        </div>
+    </div>
+    <div class="md:mr-32 mx-4 md:w-1/3">
+        <div class="z-30">
+            <img src="DJCSI Technical Tasks Image 20.png" alt="" class="w-full h-auto object-cover">
+        </div>
+            
+            <div class="  ">
+                <h6 class="text-xl font-semibold">Revamping the Membership Model with Trialthon Australia</h6>
+                <div class="flex items-center mt-2">
+                    <span class="text-[#3d8c40] font-bold mr-2">Read more</span>
+                    
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+   </div>
+</body>
+<footer class="bg-[#263238] text-white m-4 p-5 ">
+    <div class="container mx-auto px-4 ">
+        <div class="flex flex-wrap  items-start ">
+          <!-- Footer Column 1 -->
+          <div class="w-full md:w-1/3 mb-6 md:mb-0 my-11">
+            <img src="logo-white-6b89ba15.svg" class="">
+            <p class="my-7 text-opacity-20">Copyright © 2020 Landify UI Kit.</p>
+             <p class=""> All rights reserved.</p>
+          </div>
+          <div class="flex flex-col my-10">
+            <p class="font-bold text-xl">Company</p>
+            <ol class="space-y-2 font-light my-4" >
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+            <li>Pricing</li>
+            <li>Testimonials</li>
+         </ol>
+          </div>
+          <div class="flex flex-col md:mx-20 mx-10 my-10">
+            <p class="font-bold text-xl">Support</p>
+            <ol class="space-y-2 font-light my-4" >
+            <li>Help center</li>
+            <li>Terms of service</li>
+            <li>Legal</li>
+            <li>Privacy policy</li>
+            <li>Status</li>
+         </ol>
+          </div>
+          <div class="flex flex-col my-10">
+                <p class="font-bold text-xl">Stay up to date</p>
+                <input type="text" name="email" placeholder="Your email address" class="bg-white bg-opacity-15 w-56 rounded-md my-6">
+            </div>
+          </div>
+
+</footer>
+</html>
+</body>
